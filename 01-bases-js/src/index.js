@@ -1,16 +1,33 @@
 
-const arreglo = [1,2,3,4];
-arreglo.push( 5 );
+function saludar( xyz ) {
+    return `Hola ${ xyz }`;
+}
 
-const arreglo2 = [ ...arreglo ]; // Rompendo a referência por valor
-arreglo2.push( 6 );
+const saludar = ( nombre = 'Peter' ) => `Hola ${ xyz }`;
 
-const arreglo3 = arreglo2.map( function( n ) {
-    return n * 2;
-});
 
-arreglo3.push(14);
+const nombre = 'Tony';
 
-console.log(arreglo);
-console.log(arreglo2);
-console.log(arreglo3);
+// console.log( saludar(nombre) );
+
+const getUser = () => ({
+    uid: 'ABC123',
+    username: 'Tony001'
+})
+
+console.log( getUser() );
+
+const heroes = [{
+    id: 1,
+    name: 'Batman'
+}, {
+    id: 2,
+    name: 'Superman'
+}]
+
+
+// id: 1
+//const existe = ????
+
+console.log();
+
