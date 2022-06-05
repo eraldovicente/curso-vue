@@ -1,18 +1,11 @@
 
-const characters = ['Goku', 'Vegeta', 'Trunks']
+// import { owners } from './data/heroes'
 
-const [ , , trunks, goten = 'No tiene valor' ] = characters
+// const [ dc, marvel ] = owners
 
-// const goku = characters[0]
-// const vegeta = characters[1]
-// const trunks = characters[2]
+// console.log( dc );
+// console.log( marvel );
 
-// console.log( trunks, goten );
+import superHeroes from './data/heroes'
 
-const returnArray = ([ letters, numbers]) => {
-    return [ letters, numbers]
-}
-
-const [ letters, numbers ] = returnArray(['XYZ',986])
-
-console.log( letters, numbers );
+console.log(superHeroes)
