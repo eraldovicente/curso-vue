@@ -11,7 +11,7 @@ const persona = {
     }
 }
 
-const persona2  = { ...persona };
+const persona2  = { ...persona }; // Rompendo a passagem de objeto por referência com o operador spread
 persona2.nombre = 'Peter';
 
 console.log(persona);

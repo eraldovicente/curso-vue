@@ -2,7 +2,7 @@
 const arreglo = [1,2,3,4];
 arreglo.push( 5 );
 
-const arreglo2 = [ ...arreglo ]; // Rompendo a referência por valor
+const arreglo2 = [ ...arreglo ];  // Rompendo a passagem de objeto por referência com o operador spread
 arreglo2.push( 6 );
 
 const arreglo3 = arreglo2.map( function( n ) {
