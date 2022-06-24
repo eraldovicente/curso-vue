@@ -4,11 +4,14 @@
 
     <div class="indecision-container">
 
-        <input type="text" placeholder="Hazme una pregunta">
+        <input 
+            v-model="question"
+            type="text" 
+            placeholder="Hazme una pregunta">
         <p>Recuerda terminar con un signo de interrogación (?)</p>
 
         <div>
-            <h2>Seré millionario?</h2>
+            <h2>{{ question }}</h2>
             <h1>Si, No ... pensando</h1>
         </div>
 
@@ -18,7 +21,19 @@
 
 <script>
 export default {
+    data() {
+        return {
+            question: 'hola mundo'
+        }
+    },
+    watch: {
+        question( value, oldValue ) {
+            
+            if ( !value.includes('?') ) return 
 
+            // TODO: Realica petición http
+        }
+    }
 }
 </script>
 
