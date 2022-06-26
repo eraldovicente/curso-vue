@@ -8,7 +8,7 @@ describe('Example Component', () => {
     let value = 5;
 
     // Estímulo
-    value = value + 2
+    value = value + 6
 
     // Observar el resultado
     expect( value ).toBeGreaterThan( 10 )
